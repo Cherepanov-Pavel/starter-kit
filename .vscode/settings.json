@@ -1,0 +1,52 @@
+// This file is generated with
+// https://github.com/Cherepanov-Pavel/shareable-config
+// Version: 2.0.4
+// File may contain override sections, see project README for more details
+{
+	"editor.renderWhitespace": "selection",
+	"editor.tabSize": 2,
+	"editor.linkedEditing": true,
+	"editor.suggestSelection": "recentlyUsed",
+	"git.blame.editorDecoration.enabled": true,
+
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"frontend-configs.env.json5": "eslint.config.*s, stylelint.config.*s, .editorconfig",
+		".env.*.local": ".env.*",
+		".gitignore": ".gitattributes, lefthook.yml",
+		// ".gitlab-ci.yml": "Dockerfile, .releaserc.template.yaml",
+		"package.json": ".npmrc, package-lock.json",
+		"README.md": "*.md",
+		"tsconfig.json": "tsconfig.*.json, *.d.ts",
+	},
+
+	"javascript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+
+	"css.validate": false,
+	"json.validate.enable": false,
+	"editor.formatOnSave": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit",
+	},
+	"files.associations": {
+		"*.code-snippets": "jsonc",
+	},
+	"eslint.validate": [
+		"javascript",
+		"typescript",
+		"html",
+		"vue",
+		"json",
+		"jsonc",
+		"json5",
+	],
+	"stylelint.validate": [
+		"css",
+		"vue",
+	],
+	"cSpell.language": "en,ru",
+}

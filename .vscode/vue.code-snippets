@@ -1,0 +1,20 @@
+// This file is generated with
+// https://github.com/Cherepanov-Pavel/shareable-config
+// Version: 2.0.4
+// File may contain override sections, see project README for more details
+{
+	"template for empty vue file": {
+		"scope": "vue",
+		"prefix": "t vue file",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"</script>",
+			"",
+			"<template>",
+			"</template>",
+			"",
+			"<style scoped>",
+			"</style>",
+		],
+	},
+}

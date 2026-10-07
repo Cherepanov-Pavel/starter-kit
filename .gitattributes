@@ -2,9 +2,4 @@
 # https://github.com/Cherepanov-Pavel/shareable-config
 # Version: 2.0.4
 # File may contain override sections, see project README for more details
-node_modules
-.idea
-*.local
-
-# override
-.astro
+* text=auto eol=lf

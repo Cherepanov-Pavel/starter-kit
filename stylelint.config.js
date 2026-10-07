@@ -1,0 +1,30 @@
+import {
+	baseConfig,
+} from "@cherepanov.pavel/shareable-config/stylelint-config";
+
+const stylelintConfig = {
+	extends: [
+		baseConfig,
+	],
+	// Можно добавить другие опции stylelint, например:
+	// rules: { ... }
+};
+
+export function override() {
+	stylelintConfig.rules = {
+		...(stylelintConfig.rules || {
+		}),
+		"selector-max-id": null,
+	};
+	// Пример: отключить правило color-no-invalid-hex
+	// stylelintConfig.rules = {
+	//   ...(stylelintConfig.rules || {}),
+	//   'color-no-invalid-hex': null,
+	// };
+
+	// Пример: добавить ещё один конфиг
+	// stylelintConfig.extends.push('stylelint-config-recommended');
+}
+override();
+
+export default stylelintConfig;

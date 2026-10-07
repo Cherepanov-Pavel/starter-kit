@@ -1,0 +1,14 @@
+// This file is generated with
+// https://github.com/Cherepanov-Pavel/shareable-config
+// Version: 2.0.4
+// File may contain override sections, see project README for more details
+{
+	"template for todo comments for easy search in project": {
+		"prefix": "t todo",
+		"body": [
+			"$BLOCK_COMMENT_START TODO:",
+			"$0",
+			"$BLOCK_COMMENT_END",
+		],
+	},
+}
