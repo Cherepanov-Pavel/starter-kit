@@ -1,6 +1,6 @@
 // This file is generated with
 // https://github.com/Cherepanov-Pavel/shareable-config
-// Version: 2.0.4
+// Version: 2.0.7
 // File may contain override sections, see project README for more details
 {
 	"editor.renderWhitespace": "selection",
@@ -49,4 +49,17 @@
 		"vue",
 	],
 	"cSpell.language": "en,ru",
+	"cSpell.words": [
+		"cherepanov",
+		"nuxt",
+		"pavel",
+	],
+	"cSpell.customDictionaries": {
+		"project-words": {
+			"name": "project-words",
+			"path": "./project-words.md",
+			"description": "Words used in this project",
+			"addWords": true,
+		},
+	},
 }
