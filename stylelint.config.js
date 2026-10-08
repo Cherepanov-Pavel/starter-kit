@@ -15,6 +15,7 @@ export function override() {
 		...(stylelintConfig.rules || {
 		}),
 		"selector-max-id": null,
+		"no-empty-source": null,
 	};
 	// Пример: отключить правило color-no-invalid-hex
 	// stylelintConfig.rules = {

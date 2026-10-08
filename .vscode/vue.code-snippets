@@ -1,6 +1,6 @@
 // This file is generated with
 // https://github.com/Cherepanov-Pavel/shareable-config
-// Version: 2.0.13
+// Version: 2.0.18
 // File may contain override sections, see project README for more details
 {
 	"template for empty vue file": {
@@ -8,6 +8,7 @@
 		"prefix": "t vue file",
 		"body": [
 			"<script setup lang=\"ts\">",
+			"\t$0",
 			"</script>",
 			"",
 			"<template>",

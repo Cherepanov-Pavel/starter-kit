@@ -3,6 +3,7 @@
 
 import Layout from "@/layouts/Layout.astro";
 import README from "@/../README.md";
+import background from "@/assets/background.svg?url";
 
 ---
 
@@ -14,13 +15,19 @@ import README from "@/../README.md";
 	</div>
 </Layout>
 
-<style>
+<style
+	define:vars={{
+		background: `url("${background}")`,
+	}}
+>
 	.container {
-		padding: 1rem;
-		background-image: url(../../assets/background.svg);
-		background-repeat: no-repeat;
-		background-size: cover;
 		height: 100%;
 		height: -webkit-fill-available;
+
+		padding: 1rem;
+
+		background-image: var(--background);
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 </style>

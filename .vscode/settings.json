@@ -1,6 +1,6 @@
 // This file is generated with
 // https://github.com/Cherepanov-Pavel/shareable-config
-// Version: 2.0.13
+// Version: 2.0.18
 // File may contain override sections, see project README for more details
 {
 	"editor.renderWhitespace": "selection",
@@ -8,6 +8,8 @@
 	"editor.linkedEditing": true,
 	"editor.suggestSelection": "recentlyUsed",
 	"git.blame.editorDecoration.enabled": true,
+	"javascript.preferences.quoteStyle": "double",
+	"typescript.preferences.quoteStyle": "double",
 
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
@@ -40,14 +42,15 @@
 		"typescript",
 		"html",
 		"vue",
+		"astro",
 		"json",
 		"jsonc",
 		"json5",
-		"astro",
 	],
 	"stylelint.validate": [
 		"css",
 		"vue",
+		"astro",
 	],
 	"cSpell.language": "en,ru",
 	"cSpell.words": [

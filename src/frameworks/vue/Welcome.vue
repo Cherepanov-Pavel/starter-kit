@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 // import astroLogo from "../../assets/astro.svg";
 // import background from "../../assets/background.svg";
 </script>
@@ -49,6 +49,7 @@ main {
 	display: flex;
 
 	flex-direction: column;
+
 	align-items: start;
 	justify-content: center;
 

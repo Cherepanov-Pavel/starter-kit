@@ -35,6 +35,7 @@ main {
 	display: flex;
 
 	flex-direction: column;
+
 	align-items: start;
 	justify-content: center;
 
@@ -71,6 +72,7 @@ h2 {
 
 	font-size: 20px;
 	font-weight: 400;
+
 	color: #111827;
 }
 
@@ -78,8 +80,11 @@ p {
 	margin: 0;
 
 	font-size: 16px;
+
 	line-height: 24px;
+
 	color: #4b5563;
+
 	letter-spacing: -0.006em;
 }
 

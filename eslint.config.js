@@ -7,6 +7,7 @@ import {
 } from "@cherepanov.pavel/shareable-config/eslint-config";
 import {
 	OFF,
+	WARN,
 	ERROR,
 } from "@cherepanov.pavel/shareable-config/eslint-config/constants/severity.js";
 import eslintPluginAstro from "eslint-plugin-astro";
@@ -33,6 +34,7 @@ export function override() {
 		],
 		rules: {
 			"vue/multi-word-component-names": OFF,
+			"vue/valid-template-root": WARN,
 		},
 	});
 
