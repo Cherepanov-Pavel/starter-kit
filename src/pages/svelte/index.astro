@@ -1,10 +1,12 @@
 ---
-import { Welcome } from "@/frameworks/svelte/Welcome.svelte";
+import WelcomeAstroComponent from "@/frameworks/svelte/Welcome.svelte";
 import Layout from "@/layouts/Layout.astro";
 
 
 ---
 
 <Layout>
-	<Welcome client:only="svelte" />
+	<WelcomeAstroComponent
+		client:only="svelte"
+	/>
 </Layout>

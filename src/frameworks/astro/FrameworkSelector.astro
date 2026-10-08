@@ -1,7 +1,19 @@
 ---
-const frameworks = ['readme', 'astro', 'react', 'vue', 'svelte'];
+import {
+	capitalize,
+} from "@/shared/utils/string";
 
-let selectedFramework = frameworks.find(framework => Astro.url.pathname.includes(framework)) || 'readme'; // значение по умолчанию
+const frameworks = [
+	"readme",
+	"astro",
+	"react",
+	"vue",
+	"svelte",
+];
+const frameworkFromPath = frameworks.find((framework) => {
+	return Astro.url.pathname.includes(framework);
+});
+const selectedFramework = frameworkFromPath || "readme"; // значение по умолчанию
 ---
 
 <script>
@@ -20,19 +32,28 @@ select?.addEventListener('input', (e) => {
 });
 </script>
 
-<div class="framework-selector">
-  <label for="framework-select">Выберите фреймворк:</label>
-  <select
-    id="framework-select"
-    name="framework"
-    class="framework-select"
-  >
-    {frameworks.map(framework => (
-      <option value={framework} selected={framework === selectedFramework}>
-        {framework.charAt(0).toUpperCase() + framework.slice(1)}
-      </option>
-    ))}
-  </select>
+<div
+	class="framework-selector"
+>
+	<label
+		for="framework-select"
+	>
+		Выберите фреймворк:
+	</label>
+	<select
+		id="framework-select"
+		name="framework"
+		class="framework-select"
+	>
+		{frameworks.map((framework) => (
+			<option
+				value={framework}
+				selected={framework === selectedFramework}
+			>
+				{capitalize(framework)}
+			</option>
+		))}
+	</select>
 </div>
 
 <style>

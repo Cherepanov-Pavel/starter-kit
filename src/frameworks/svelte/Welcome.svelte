@@ -2,7 +2,11 @@
 	<main>
 		<section id="hero">
 			<h1>
-				Для начала откройте каталог  <code><pre>src/frameworks/svelte/Welcome.svelte</pre></code> в вашем проекте.
+				Для начала откройте каталог
+				<code>
+					<pre>src/frameworks/svelte/Welcome.svelte</pre>
+				</code>
+				в вашем проекте.
 			</h1>
 		</section>
 	</main>

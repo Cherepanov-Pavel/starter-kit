@@ -13,8 +13,10 @@
 			>
 				<h1>
 					Для начала откройте каталог
-					<code><pre>src/frameworks/vue/Welcome.vue</pre></code> в вашем
-					проекте.
+					<code>
+						<pre>src/frameworks/vue/Welcome.vue</pre>
+					</code>
+					в вашем проекте.
 				</h1>
 			</section>
 		</main>

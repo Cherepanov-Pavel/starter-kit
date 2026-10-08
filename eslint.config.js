@@ -7,6 +7,7 @@ import {
 } from "@cherepanov.pavel/shareable-config/eslint-config";
 import {
 	OFF,
+	ERROR,
 } from "@cherepanov.pavel/shareable-config/eslint-config/constants/severity.js";
 import eslintPluginAstro from "eslint-plugin-astro";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
@@ -48,7 +49,7 @@ export function override() {
 			parser: astroParser,
 			parserOptions: {
 				parser: tsParser,
-				projectService: true,
+				project: true,
 				extraFileExtensions: [
 					".astro",
 				],
@@ -56,6 +57,33 @@ export function override() {
 		},
 		rules: {
 			...tsConfig.rules,
+			"@stylistic/jsx-first-prop-new-line": [
+				ERROR,
+				"always",
+			],
+			"@stylistic/jsx-max-props-per-line": [
+				ERROR,
+				{
+					"maximum": {
+						single: 1,
+						multi: 1,
+					},
+				},
+			],
+			"@stylistic/jsx-closing-bracket-location": [
+				ERROR,
+				"tag-aligned",
+			],
+			"arrow-body-style": [
+				OFF,
+			],
+			// buggy
+			// "@stylistic/jsx-one-expression-per-line": [
+			// 	ERROR,
+			// 	{
+			// 		"allow": "non-jsx",
+			// 	},
+			// ],
 		},
 	});
 }
