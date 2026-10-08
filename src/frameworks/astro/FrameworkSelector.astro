@@ -4,11 +4,27 @@ const frameworks = ['readme', 'astro', 'react', 'vue', 'svelte'];
 let selectedFramework = frameworks.find(framework => Astro.url.pathname.includes(framework)) || 'readme'; // значение по умолчанию
 ---
 
+<script>
+// Find all buttons with the `alert` class on the page.
+const select = document.getElementById('framework-select');
+
+// Handle clicks on each button.
+select?.addEventListener('input', (e) => {
+	if(!e?.target){
+		return
+	}
+	const target = e.target as HTMLSelectElement
+	const value = target.value || 'astro';
+
+	window.location.href = `/${value}`;
+});
+</script>
+
 <div class="framework-selector">
   <label for="framework-select">Выберите фреймворк:</label>
-  <select 
-    id="framework-select" 
-    name="framework" 
+  <select
+    id="framework-select"
+    name="framework"
     class="framework-select"
   >
     {frameworks.map(framework => (
@@ -18,17 +34,6 @@ let selectedFramework = frameworks.find(framework => Astro.url.pathname.includes
     ))}
   </select>
 </div>
-<script>
-    // Find all buttons with the `alert` class on the page.
-    const select = document.getElementById('framework-select');
-
-    // Handle clicks on each button.
-    select?.addEventListener('input', (e) => {
-        const value = e?.target?.value || 'astro';
-            
-        window.location.href = `/${value}`;
-    });
-</script>
 
 <style>
   .framework-selector {
@@ -40,7 +45,7 @@ let selectedFramework = frameworks.find(framework => Astro.url.pathname.includes
     border-bottom-left-radius: 8px;
     background-color: #f9f9f9;
   }
-  
+
   .framework-select {
     padding: 0.5rem;
     border: 1px solid #ccc;
@@ -48,7 +53,7 @@ let selectedFramework = frameworks.find(framework => Astro.url.pathname.includes
     font-size: 1rem;
     cursor: pointer;
   }
-  
+
   label {
     font-weight: bold;
     font-size: 1rem;

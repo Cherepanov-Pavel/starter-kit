@@ -1,8 +1,9 @@
 ---
-import WelcomeReact from '../../frameworks/react/Welcome.tsx';
-import Layout from '../../layouts/Layout.astro';
+import Welcome from '@/frameworks/react/Welcome';
+import Layout from '@/layouts/Layout.astro';
+
 ---
 
 <Layout>
-	<WelcomeReact client:only="react" />
+	<Welcome client:only="react" />
 </Layout>

@@ -1,8 +1,10 @@
 ---
-import WelcomeVue from '../../frameworks/vue/Welcome.vue';
-import Layout from '../../layouts/Layout.astro';
+import { Welcome } from "@/frameworks/vue/Welcome.vue";
+import Layout from "@/layouts/Layout.astro";
+
+
 ---
 
 <Layout>
-	<WelcomeVue client:only="vue" />
+	<Welcome client:only="vue" />
 </Layout>
