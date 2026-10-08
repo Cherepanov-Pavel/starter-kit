@@ -3,17 +3,20 @@
 // Version: 2.0.13
 // File may contain override sections, see project README for more details
 {
-	"template for empty vue file": {
-		"scope": "vue",
-		"prefix": "t vue file",
+	"template for empty astro file": {
+		"scope": "astro",
+		"prefix": "t astro file",
 		"body": [
-			"<script setup lang=\"ts\">",
+			"---",
+			"---",
+			"",
+			"<script>",
 			"</script>",
 			"",
-			"<template>",
-			"</template>",
+			"<div>",
+			"</div>",
 			"",
-			"<style scoped>",
+			"<style>",
 			"</style>",
 		],
 	},

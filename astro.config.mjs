@@ -24,9 +24,7 @@ export default defineConfig({
 	integrations: [
 		mdx(),
 		vue({
-			// include: [
-			// 	"**/vue/*",
-			// ],
+			// include: ['**/vue/*'],
 		}),
 		svelte({
 			// include: ['**/svelte/*'],

@@ -1,6 +1,6 @@
 // This file is generated with
 // https://github.com/Cherepanov-Pavel/shareable-config
-// Version: 2.0.7
+// Version: 2.0.13
 // File may contain override sections, see project README for more details
 {
 	"recommendations": [
@@ -9,9 +9,9 @@
 		"johnsoncodehk.vscode-tsconfig-helper",
 		"yoavbls.pretty-ts-errors",
 		"vue.volar",
-		"ms-azuretools.vscode-containers",
-		// "redhat.vscode-yaml",
+		"astro-build.astro-vscode",
 		"savh.json5-kit",
+		"ms-azuretools.vscode-containers",
 
 		"editorconfig.editorconfig",
 		"dbaeumer.vscode-eslint",
