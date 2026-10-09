@@ -8,7 +8,7 @@
 		"prefix": "t vue file",
 		"body": [
 			"<script setup lang=\"ts\">",
-			"\t$0",
+			"$0",
 			"</script>",
 			"",
 			"<template>",
